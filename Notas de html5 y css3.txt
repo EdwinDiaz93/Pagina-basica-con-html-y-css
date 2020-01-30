@@ -1,0 +1,149 @@
+
+-------Section 2: Dive into HTML-------
+¿que es html?
+
+-html por su siglas es hyper text markup language es un lenguaje de marcado para estructurar las paginas web
+-html esta construido con etiquetas especificas las cuales tienen diferentes funcionalidades como <h1> <p> y <a>
+-las etiquetas tienen la siguiente estructura <etiqueta>contenido</etiqueta>
+
+cada documento html para seguir un estandar su archivo principal se nombra como index.html
+las dos etiquetas  mas importantes de html son el head y el body se debe declarar el doctype al princio del documento
+
+el head contiene el titulo y toda la informacion necesaria para los buscadores como google o yahoo 
+el body contiene todo lo que el usuario vera 
+
+<h1> es una etiqueta utilizada para poner titulos grandes existe de la h1 hasta la h6 entre mas se acerca al h6 mas pequeño es el titulo
+<em> es una etiqueta utilizada para hacer enfasis a un texto 
+<u> es un etiqueta utilizada para subrayar un texto
+<br> es para hacer un break al texto o un salto de linea dentro o fuera de un parrafo
+<p> es un etiqueta para mostrar parrafos en los sitios web
+
+las imagenes se muestran haciendo uso de la etiqueta <img> los atributos relacionados a esta son 
+src es la ruta de la imagen que se mostrar y alt que es un texto alternativo en caso que la imagen no pueda mostrarse
+
+los links pueden ser insertados en las paginas html usando la etiqueta <a> esta recibe el atributo href 
+donde se coloca la direccion a la que el link reenviara y target para especificar si se abre en una nueva pestaña o en la pestaña actual
+
+Section 3: Formatting with CSS 
+
+¿Que es css ?
+
+css significa hojas de estilo en casacada 
+sirve para darle formato a los documentos html 
+existen tres formas de colocar css en nuestros documentos html 
+la primera forma es colocandolo en las etiquetas html con el atributo style
+la segunda forma es colocandolo dentro de la etiqueta head con las etiquetas style y
+la tercer forma es colocandolo en un archivo externo 
+
+la tercera es mas ventajosa ya que separa el contenido de la presentacion 
+para poder enlazar los archivos css se hace con la etiqueta link
+
+--Selectores
+
+para darle estilos a las etiquetas css se hace uso de los selectores estos son las mismas etiquetas seguidas de llaves donde estaran las reglas css
+
+es una mala practica repetir codigo a la hora de dar estilos se puede refactorizar y dar el mismo estilo a varias etiquetas al mismo tiempo
+
+algunas reglas css
+
+color: utilizado para cambiar el color de texto 
+font-family: utilizado para cambiar el tipo de letra
+font-size: utilizado para cambiar el tamaño de letra
+text-align: utilizado para alinear el texto
+
+
+otro tipo de selectores son las clases y los ID´s y son para darles estilos a ciertoes elemenots html 
+los ID´s solo pueden darle estilos a un elemento a la vezz
+las clases pueden darle estilos a varios elementos a la vez 
+y tanto las clases como los ID´s puede tener el nombre que sea
+
+para referenciar un ID en las hojas de estilo css se utiliza # seguido del nombre del id
+para referenciar classes en las hojas de estilo css se utiliza el punto . seguido del nombre de la clase
+no es una buena practica utilizar los id debido a que solo puede referenciar el estilo de un elemento a la vez 
+
+---modelo de caja
+
+el modelo de caja esta compuesto por el borde, el padding, los margenes, y el contenido
+el borde es una linea que rodea el elemento de caja
+el padding es la separacion entre el contenido de la caja y el borde 
+el margen es la separacion entre el borde y los otros elementos 
+
+otras atributos importantes son el height y el width, altura y ancho que puede tener una caja
+el problema del modelo de caja es que hay que estar definiendo la altura y ancho de la caga porque solo se puede cambiar el 
+alto y ancho de los elementos
+
+para evitar este tipo de problemas se puede utilizar el box-sizing 
+
+existen dos tipos de elemetos los de linea y de bloque 
+los elementos de bloque utilizan todo el ancho de la pagina web las etiquetas que usan todo este espacio son <p> <h 1-6>
+
+por defecto los navegadores establecen un margen a los elementos html
+
+cuando utilizamos margin-auto los margenes ya sea izquierda derecha arriba abajo se ajustan al tamaño del navegador
+
+para establecer los margenes personalizados se usa margin luego se detalla el margen de arriba derecha abajo e izquierda
+
+al crear una clase se puede referenciar dentro de un archivo css cuando se hace referencia y se pone una etiqueta despues del nombre de la clase
+los estilos afectaran a todas estas etiquetas
+
+Section 4: Web design basics 
+la tipogreafia debe seguir un estandar de 15px a 22px
+el espacio de linea debe de ser de 120% a 150%
+las cabeceras y titulos deben tener 32px 60px o 90px no importa tanto pero la intensidad del texto debe ser liviana
+de 45 a 90 caracteres por linea es lo correcto 78 caracteres lo ideal
+
+fuentes recomendas serif: open sans, lato, raleway, monserat, pt sans
+		   serifs(red serifs): cardo, merriweather, pt serif-> si se muestra mucho texto
+
+Los colores son uno de los temas mas importantes del diseño web 
+la primer regla es usar un solo color base
+no usar color negro en diseños
+elegir los colores sabiamente segun la psicologia del color
+
+las imagenes son muy importantes en los diseños web
+hay que procurar poner el texto directamente en la imagen si el texto no se alcanza a leer por que es del mismo color que la imagen
+se debe cubrir  la imagen con un color  o
+poner texto en cajas sobre la imagen o
+debe hacer borrosa la imagen-> blur image
+y por ultimo de floor fade
+
+los iconos
+se deben usar para listar las caracteristicas del sitio o una serie de pasos
+se deben usar para los enlaces deben ser reconocibles y tener un texto relacionado
+no se deberia colocar los iconos al centro de un sitio web 
+usar iconos cuando sea posible es mejor usar los fonts icons que las imagenes estaticas
+
+los layouts
+usar espacios en blanco entre elementos, grupos elementos y entre secciones del sitio web
+definir la jerarquia
+	establecer donde quieres que los visitantes vean primero
+	establece el flujo al que corresponde el contenido del mensaje
+	usa espacios en blanco para definir el flujo 
+
+The killer websiite
+   
+7 pasos para constuir un sitio web
+-definir la meta del producto, la audiencia
+-Planificar todo
+	planificar el contenido del sitio como imagenes textos y demas
+	planificar la jerarquia 
+	Definir la navegacion
+	Definir la estructura del sitio si es un proyecto grande
+-hacer un bosquejo de la ideas antes de comenzar a diseñar
+	hacer los bosquejos que sean posibles
+	no comenzar sin una idea o bosquejo
+-diseñar el sitio web 
+	con los principios aprendidos del diseño web
+	con html y css
+	usar los bosquejos para el diseño
+-usar SEO
+-lanzar el sitio web a produccion
+-monitorear el comportamiento del sitio web
+
+Los tres ingredientes para el diseño web responsivo
+-El tamaño de todos los elementos del diseño estan en unidades relativas es decir en porcentaje en lugar de pixelesque son unidades absolutas->grid fluido
+-El tamaño de las imagenes tambien estan en unidades relativas-flexible images
+-Los media query permiten especificar reglas css para diferentes tamaños del navegador
+
+
+
